@@ -1,6 +1,6 @@
 local Term = require "sfterm.terminal"
 local t = Term:new()
-local o = require "sforg"
+local U = require "sfterm.util"
 
 local M = {}
 
@@ -8,21 +8,14 @@ function M.toggle()
   t:toggle()
 end
 
-function M.deploy()
-  if o.target_org == nil then
-    return o.setTargetOrg()
-  end
-
-  local cmd = 'sf project deploy start  --source-dir "%" --target-org ' .. o.target_org
+function M.push()
+  local cmd = U.expand_cmd('sf project deploy start  --source-dir % ') .. U.get_target_org()
   t:run(cmd)
 end
 
 function M.retrieve()
-  if o.target_org == nil then
-    return o.setTargetOrg()
-  end
-
-  local cmd = 'sf project retrieve start  --source-dir "%" --target-org ' .. o.target_org
+  local cmd = U.expand_cmd('sf project retrieve start  --source-dir % ') .. U.get_target_org()
   t:run(cmd)
 end
+
 return M

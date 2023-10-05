@@ -1,4 +1,4 @@
-local U = require('sf.util')
+local U = require('sfterm.util')
 
 local A = vim.api
 local fn = vim.fn
@@ -231,11 +231,9 @@ end
 function Term:run(command)
   self:open()
 
-  local expanded_command = fn.expandcmd(command)
-
   A.nvim_chan_send(
     self.terminal,
-    expanded_command .. '\r'
+    command .. '\r'
   )
 
   return self
