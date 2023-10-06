@@ -13,8 +13,8 @@ Why? A better workflow:
 **Built-in commands:**
 
 - `toggle()` // toggle the terminal on and off;
-- `retrieve()` // retrieve current file from Salesforce org;
-- `push()` // retrieve current file from Salesforce org;
+- `retrieve()` // retrieve current file from your Salesforce target org;
+- `push()` // retrieve current file from your Salesforce target org;
 - `run(command)` // run your own command in terminal;
 
 ## 1. Toggle on/off the terminal on a float window
@@ -54,7 +54,13 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").push()<CR>') // def
 
 - support `target_org` value from `sforg.nvim` if it's installed
 
-## 3. Interact with the terminal
+## 3. Use target_org value from sforg.nvim (Optional)
+
+[sforg.nvim](https://github.com/xixiaofinland/sforg.nvim) plugin can retrieve and set a target_org value.
+In case you have it installed, the built-in commands for Salesforce will run
+against the target org value, meaning it adds a `-o target_org' paramater at end of commands.
+
+## 4. Interact with the terminal
 
 It's a terminal wrapped in a buffer in a window. Feel free to enter the window
 and hit `i` to enter insert mode to use it.
