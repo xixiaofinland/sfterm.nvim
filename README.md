@@ -1,6 +1,6 @@
 # Description
 
-It creates an integrated terminal in Nvim, and send commands to it.
+It creates an terminal in a float window, and send commands to it.
 
 Why? A better workflow:
 
