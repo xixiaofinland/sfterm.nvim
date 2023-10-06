@@ -4,7 +4,7 @@ It creates an integrated terminal in Nvim, and run `sf` commands in it.
 
 # Features
 
-## Toggle on/off the terminal on a float window
+## 1. Toggle on/off the terminal on a float window
 
 ```
 :lua require'sfterm'.toggle()
@@ -15,7 +15,7 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").toggle()<CR>')
 
 ![pic1](./pics/1.png)
 
-## Execute terminal commands without leaving your working window
+## 2. Execute terminal commands without leaving your working window
 
 It has a built-in `retrieve()` to retrive the current file from your Salesforce target org.
 
@@ -26,6 +26,8 @@ It has a built-in `retrieve()` to retrive the current file from your Salesforce 
 vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").retrieve()<CR>')
 ```
 
+![pic2](./pics/2.png)
+
 It has a built-in `push()` to push the current file from your Salesforce target org.
 
 ```
@@ -34,5 +36,8 @@ It has a built-in `push()` to push the current file from your Salesforce target 
 ```
 vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").push()<CR>')
 ```
+
+![pic3](./pics/3.png)
+
 - execute commands without leaving current window
 - support `target_org` value from `sforg.nvim` if it's installed
