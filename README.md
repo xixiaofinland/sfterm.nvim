@@ -30,7 +30,7 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").toggle()<CR>') // d
 
 ## 2. Execute terminal commands without leaving your working window
 
-`retrieve()` the current file
+**`retrieve()` the current file**
 
 ```
 :lua require'sfterm'.retrieve() // run in Ex;
@@ -41,7 +41,7 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").retrieve()<CR>') //
 
 ![pic2](./pics/2.png)
 
-`push()` the current file
+**`push()` the current file**
 
 ```
 :lua require'sfterm'.push() // run in Ex;
@@ -51,8 +51,6 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").push()<CR>') // def
 ```
 
 ![pic3](./pics/3.png)
-
-- support `target_org` value from `sforg.nvim` if it's installed
 
 ## 3. Use target_org value from sforg.nvim (Optional)
 
