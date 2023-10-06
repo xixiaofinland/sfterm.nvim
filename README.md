@@ -1,12 +1,12 @@
 # Description
 
-It creates an integrated terminal in Nvim, and run `sf` commands in it.
+It creates an integrated terminal in Nvim, and send commands to it.
 
-Why? A better workflow, because:
+Why? A better workflow:
 
-- No window switch to run commands
-- Expand special chars (e.g. `%`, `%:p` to the file path) in your command
-- Stay in your current working window when executing
+- No window switch, a float window
+- Expand special chars (e.g. `%`, `%:p` to the file path) of your command
+- Stay in your current window when executing
 
 # Features
 
@@ -58,7 +58,7 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").push()<CR>') // def
 
 It's a terminal wrapped in a buffer in a window. Feel free to enter the window
 and hit `i` to enter insert mode to use it.
-Note. Exit insert mode in terminal is `<C-\><C-n>`
+Note: exit insert mode in terminal is `<C-\><C-n>`
 
 You can also execute random commands to the terminal without leaving your current
 window by:
@@ -69,4 +69,4 @@ window by:
 
 # Credit
 
-Heavily borrowed from [FTerm.nvim](https://github.com/numToStr/FTerm.nvim/tree/master/lua/FTerm)
+Heavily learned from [FTerm.nvim](https://github.com/numToStr/FTerm.nvim/tree/master/lua/FTerm)
