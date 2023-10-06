@@ -2,14 +2,11 @@
 
 It creates an integrated terminal in Nvim, and run `sf` commands in it.
 
-Why? A better workflow for some actions comparing to a separate terminal,
-because:
+Why? A better workflow, because:
 
-- No window switch, toggle on/off in an integrated float window
-- Expand special chars (e.g. `%`, `%:p` to the file path) in your command, so it
-  works seamlessly with your working buffer (explained below)
-- Execute commands without leaving your current working window (explained
-  below)
+- No window switch to run commands
+- Expand special chars (e.g. `%`, `%:p` to the file path) in your command
+- Stay in your current working window when executing
 
 # Features
 
