@@ -30,7 +30,7 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").toggle()<CR>') // d
 
 ## 2. Execute terminal commands without leaving your working window
 
-**`retrieve()` the current file**
+**`retrieve()` the current file** (Salesforce sf command)
 
 ```
 :lua require'sfterm'.retrieve() // run in Ex;
@@ -41,7 +41,7 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").retrieve()<CR>') //
 
 ![pic2](./pics/2.png)
 
-**`push()` the current file**
+**`push()` the current file** (Salesforce sf command)
 
 ```
 :lua require'sfterm'.push() // run in Ex;
