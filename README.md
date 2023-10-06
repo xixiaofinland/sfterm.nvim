@@ -13,6 +13,13 @@ because:
 
 # Features
 
+**Built-in commands:**
+
+- `toggle()` // toggle the terminal on and off;
+- `retrieve()` // retrieve current file from Salesforce org;
+- `push()` // retrieve current file from Salesforce org;
+- `run(command)` // run your own command in terminal;
+
 ## 1. Toggle on/off the terminal on a float window
 
 ```
@@ -63,5 +70,6 @@ window by:
 :lua require'sfterm'.run('ls -la')
 ```
 
+# Credit
 
-
+Heavily borrowed from [FTerm.nvim](https://github.com/numToStr/FTerm.nvim/tree/master/lua/FTerm)
