@@ -26,7 +26,7 @@ Why? A better workflow:
 vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").toggle()<CR>') // define hotkey;
 ```
 
-![pic1](./pics/1.png)
+![pic1](https://github.com/xixiaofinland/storage/blob/master/pics/1.png)
 
 ## 2. Execute terminal commands without leaving your working window
 
@@ -39,7 +39,7 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").toggle()<CR>') // d
 vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").retrieve()<CR>') // define hotkey;
 ```
 
-![pic2](./pics/2.png)
+![pic2](https://github.com/xixiaofinland/storage/blob/master/pics/2.png)
 
 **`push()` the current file** (Salesforce sf command)
 
@@ -50,7 +50,7 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").retrieve()<CR>') //
 vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").push()<CR>') // define hotkey;
 ```
 
-![pic3](./pics/3.png)
+![pic3](https://github.com/xixiaofinland/storage/blob/master/pics/3.png)
 
 ## 3. Use target_org value from sforg.nvim (Optional)
 
