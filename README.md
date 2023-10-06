@@ -57,7 +57,7 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").push()<CR>') // def
 [sforg.nvim](https://github.com/xixiaofinland/sforg.nvim) plugin can retrieve and set a target_org value.
 
 In case you have it installed, the built-in commands for Salesforce will run
-against the target org value, meaning it adds a `-o target_org' paramater at end of commands`.
+against the target org value, meaning it adds a `-o target_org` paramater at end of commands.
 
 ## 4. Interact with the terminal
 
