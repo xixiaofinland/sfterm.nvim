@@ -4,9 +4,9 @@ It creates an terminal in a float window, and send commands to it.
 
 Why? A better workflow:
 
-- No window switch, a float window
+- No window switch. A float window on top.
 - Expand special chars (e.g. `%`, `%:p` to the file path) of your command
-- Stay in your current window when executing
+- Stay in your current working file buffer when executing commands
 
 # Features
 
@@ -56,16 +56,19 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").push()<CR>') // def
 
 [sforg.nvim](https://github.com/xixiaofinland/sforg.nvim) plugin can retrieve and set a target_org value.
 
-In case you have it installed, the built-in commands for Salesforce will run
-against the target org value, meaning it adds a `-o target_org` paramater at end of commands.
+In case you have it installed, the built-in commands (push(), retrieve()) for Salesforce will run
+against the target org value, meaning it adds a `-o target_org` paramater at end of those commands.
 
 ## 4. Interact with the terminal
 
 It's a terminal wrapped in a buffer in a window. Feel free to enter the window
-and hit `i` to enter insert mode to use it.
-Note: exit insert mode in terminal is `<C-\><C-n>`
+and hit `i` to enter insert mode to use it. I recommend to use a separate
+terminal like Tmux, but the choice is yours.
 
-You can also execute random commands to the terminal without leaving your current
+Note: `<C-\><C-n>` to go back to normal mode in the terminal. `C-]`, `Esc`, or
+`kj` etc. won't work.
+
+You can also execute random commands in the terminal without leaving your current working
 window by:
 
 ```
