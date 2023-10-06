@@ -18,4 +18,9 @@ function M.retrieve()
   t:run(cmd)
 end
 
+function M.run(c)
+  local cmd = U.expand_cmd(c)
+  t:run(cmd)
+end
+
 return M
