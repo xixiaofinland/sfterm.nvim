@@ -6,6 +6,15 @@ An integrated terminal tailored for Salesforce development, with a workflow that
 - Expand special chars (e.g. `%`, `%:p` to the file path) of your command
 - Stay in your current working file buffer when executing commands
 
+# Installation
+
+Install the plugin with your package manager of choice.
+
+```
+// put this into Plug, Packer, Lazy, etc.
+'xixiaofinland/sfterm.nvim'
+```
+
 # Features
 
 **Built-in commands:**
