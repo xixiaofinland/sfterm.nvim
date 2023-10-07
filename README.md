@@ -14,7 +14,7 @@ Why? A better workflow:
 
 - `toggle()` // toggle the terminal on and off;
 - `retrieve()` // retrieve current file from your Salesforce target org;
-- `push()` // retrieve current file from your Salesforce target org;
+- `push()` // push current file from your Salesforce target org;
 - `run(command)` // run your own command in terminal;
 
 ## 1. Toggle on/off the terminal on a float window

@@ -41,7 +41,7 @@ U.defaults = {
   ft = 'SFTerm',
   cmd = function()
     return assert(
-      os.getenv('SHELL'),
+      os.getenv('SHELL') | 'ls -la',
       '[SFTerm] $SHELL is not present! Please provide a shell (`config.cmd`) to use.'
     )
   end,
