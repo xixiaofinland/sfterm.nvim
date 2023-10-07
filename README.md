@@ -1,10 +1,8 @@
-# Description
+# Sfterm.nvim
 
-It creates an terminal in a float window, and send commands to it.
+An integrated terminal tailored for Salesforce development, with a workflow that:
 
-Why? A better workflow:
-
-- No window switch. A float window on top.
+- Has no window switch
 - Expand special chars (e.g. `%`, `%:p` to the file path) of your command
 - Stay in your current working file buffer when executing commands
 
