@@ -23,7 +23,7 @@ Why? A better workflow:
 :lua require'sfterm'.toggle() // run in Ex;
 ```
 ```
-vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").toggle()<CR>') // define hotkey;
+vim.keymap.set('n', '<leader>t', require("sfterm").toggle, { desc = "Toggle terminal" }) 
 ```
 
 ![pic1](https://github.com/xixiaofinland/storage/blob/master/pics/1.png)
@@ -36,7 +36,7 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").toggle()<CR>') // d
 :lua require'sfterm'.retrieve() // run in Ex;
 ```
 ```
-vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").retrieve()<CR>') // define hotkey;
+vim.keymap.set('n', '<leader>sr', require("sfterm").retrieve,  { desc = "Sf: retrieve current file" })
 ```
 
 ![pic2](https://github.com/xixiaofinland/storage/blob/master/pics/2.png)
@@ -47,7 +47,7 @@ vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").retrieve()<CR>') //
 :lua require'sfterm'.push() // run in Ex;
 ```
 ```
-vim.keymap.set('n', '<leader>t', '<CMD>lua require("sfterm").push()<CR>') // define hotkey;
+vim.keymap.set('n', '<leader>sp', require("sfterm").push,  { desc = "Sf: push current file" })
 ```
 
 ![pic3](https://github.com/xixiaofinland/storage/blob/master/pics/3.png)
