@@ -9,12 +9,12 @@ function M.toggle()
 end
 
 function M.push()
-  local cmd = U.expand_cmd('sf project deploy start  --source-dir % ') .. U.get_target_org()
+  local cmd = U.expand_cmd('sf project deploy start  -m % ') .. U.get_target_org()
   t:run(cmd)
 end
 
 function M.retrieve()
-  local cmd = U.expand_cmd('sf project retrieve start  --source-dir % ') .. U.get_target_org()
+  local cmd = U.expand_cmd('sf project retrieve start  -m % ') .. U.get_target_org()
   t:run(cmd)
 end
 
