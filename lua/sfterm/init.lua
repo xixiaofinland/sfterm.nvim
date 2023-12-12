@@ -8,7 +8,8 @@ function M.toggle()
   t:toggle()
 end
 
-function M.push()
+function M.saveAndPush()
+  vim.api.nvim_command('write')
   local cmd = U.expand_cmd('sf project deploy start  -d %:p ') .. U.get_target_org()
   t:run(cmd)
 end
