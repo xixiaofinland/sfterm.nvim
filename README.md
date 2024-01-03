@@ -1,4 +1,5 @@
-# Sfterm.nvim
+# to be deleted.
+the feature is merged into sf.nvim https://github.com/xixiaofinland/sf.nvim
 
 An integrated terminal tailored for Salesforce development, with a workflow that:
 
